@@ -1,0 +1,30 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant."
+  },
+  {
+    "role": "user",
+    "content": "Hi, can you help me plan a weekend trip to Jaipur?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. What kind of trip are you looking for: relaxing, cultural, or food-focused?"
+  },
+  {
+    "role": "user",
+    "content": "Mostly cultural, but I would love some food recommendations too."
+  },
+  {
+    "role": "assistant",
+    "content": "Great choice. Jaipur has forts, palaces, and excellent Rajasthani food."
+  },
+  {
+    "role": "user",
+    "content": "Can you suggest a simple 2-day itinerary with morning and evening plans?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. I can break it down day by day and include top attractions and meals."
+  }
+]
