@@ -1,51 +1,73 @@
-# Conversation Navigator
+# Context-Aware Conversation Navigator
 
-A beginner-friendly Streamlit MVP for exploring chat conversations.
+A Streamlit-based system that improves navigation in long AI conversations by introducing structured sections, topic grouping, and question-based navigation.
 
-## Features
+---
 
-- Loads chat messages from `data/sample_chat.json`
-- Supports uploaded `.json` conversation files
-- Extracts only user messages
-- Groups user questions by topic in the sidebar
-- Shows conversation sections with rule-based summaries
-- Uses a sectioned sidebar instead of a flat question list
-- Displays the full conversation in the main area
-- Adds simple search for user questions
-- Organizes helper code inside `utils/`
+## 🚨 Problem
 
-## Project Files
+Long AI conversations (like ChatGPT chats) become difficult to navigate:
+- Users must scroll extensively
+- Context is hard to revisit
+- No structured overview of discussion
 
-- `app.py` - Streamlit application
-- `utils/extractor.py` - Helpers for loading data and filtering user messages
-- `utils/tags.py` - Helpers for assigning topic tags
-- `utils/sections.py` - Helpers for building sections, summaries, and grouped questions
-- `data/sample_chat.json` - Sample conversation data
-- `requirements.txt` - Python dependency list
+---
 
-## Run Locally
+## 💡 Solution
 
-1. Install dependencies:
+This project introduces a structured navigation system:
+- Extracts user questions
+- Groups them by topic
+- Splits conversation into sections
+- Generates section summaries
+- Enables jump navigation
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-2. Start the app:
+## ⚙️ Features
 
-   ```bash
-   streamlit run app.py
-   ```
+- 📂 Upload your own chat JSON
+- 🧠 Topic-based grouping (DSA, ML, Career, etc.)
+- 📌 Sidebar navigation for user questions
+- 🧭 Section-based conversation structuring
+- 📝 Rule-based section summaries
+- 🔍 Search functionality
+- 🎯 Highlight selected message
 
-3. Open the local URL shown in your terminal.
+---
 
-## Sample Data Format
+## 🧠 Why This Matters
 
-Each message in `data/sample_chat.json` uses this structure:
+This project explores how AI interfaces can evolve from:
+> Linear chat → Structured knowledge systems
 
-```json
-{
-  "role": "user",
-  "content": "What should I visit first?"
-}
-```
+Potential applications:
+- AI learning assistants
+- Developer productivity tools
+- Research workflows
+- Long-form AI collaboration
+
+---
+
+## 🛠 Tech Stack
+
+- Python
+- Streamlit
+- Modular architecture (utils/)
+
+---
+
+## 🚀 Future Improvements
+
+- LLM-based summarization
+- Semantic topic clustering
+- ChatGPT plugin integration
+- Real-time conversation indexing
+
+---
+
+## ▶️ Run Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
